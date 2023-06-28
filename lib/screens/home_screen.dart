@@ -5,6 +5,7 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import '../utils/app_layout.dart';
 import '../utils/app_styles.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -54,7 +55,7 @@ class HomeScreen extends StatelessWidget {
                 const Gap(25), //SizedBox(height: 25)
                 Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(AppLayout.getHeight(10)),
                     color: const Color(0xFFF4F6FD),
                   ),
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),

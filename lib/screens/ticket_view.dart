@@ -95,14 +95,14 @@ class TicketView extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(10),
-                          bottomRight: Radius.circular(10)
+                          topRight: Radius.circular(AppLayout.getHeight(10)),
+                          bottomRight: Radius.circular(AppLayout.getHeight(10))
                         )
                       ),
                     ),
                   ),
                   Expanded(child: Padding(
-                    padding: const EdgeInsets.all(12.0),
+                    padding: EdgeInsets.all(AppLayout.getHeight(12)),
                     child: LayoutBuilder(
                       builder: (BuildContext context, BoxConstraints constraints){
                         return Flex(
@@ -121,15 +121,15 @@ class TicketView extends StatelessWidget {
                       }
                     ),
                   )),
-                  const SizedBox(
+                  SizedBox(
                     height: 20,
                     width: 10,
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(10),
-                              bottomLeft: Radius.circular(10)
+                              topLeft: Radius.circular(AppLayout.getHeight(10)),
+                              bottomLeft: Radius.circular(AppLayout.getHeight(10))
                           )
                       ),
                     ),
@@ -143,7 +143,7 @@ class TicketView extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 color: Styles.orangeColor,
-                borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(21), bottomRight: Radius.circular(21),),
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(AppLayout.getHeight(21)), bottomRight: Radius.circular(AppLayout.getHeight(21)),),
               ),
               padding: const EdgeInsets.only(left: 16, top: 10, right: 16, bottom: 16),
               child: Column(
